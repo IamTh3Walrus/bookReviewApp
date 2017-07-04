@@ -51,7 +51,7 @@ end
   private
 # Book params requires a book, a title, a description and an author. Which will be sent to the database.
     def book_params
-      params.require(:book).permit(:title, :description, :author, :category_id)
+      params.require(:book).permit(:title, :description, :author, :category_id, :book_img)
     end
 
     def find_book
